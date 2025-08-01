@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Professional Portfolio</title>
+    <meta name="description" content="Professional portfolio showcasing experience, skills, and achievements">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Portfolio</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#achievements" class="nav-link">Achievements</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-left">
+                    <div class="profile-image-container">
+                        <div class="profile-image">
+                            <i class="fas fa-user profile-placeholder"></i>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" class="social-link" style="--link-color: #4285f4">
+                            <i class="fab fa-google"></i>
+                            <span>Scholar</span>
+                        </a>
+                        <a href="https://orcid.org/0000-0000-0000-0000" target="_blank" class="social-link" style="--link-color: #a6ce39">
+                            <i class="fab fa-orcid"></i>
+                            <span>ORCID</span>
+                        </a>
+                        <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-link" style="--link-color: #0077b5">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/yourusername" target="_blank" class="social-link" style="--link-color: #333">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="mailto:your.email@example.com" class="social-link" style="--link-color: #ea4335">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Your Name</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        <span id="typed-text"></span>
+                    </p>
+                    <p class="hero-description">
+                        Brief professional description that highlights your expertise and passion. This section should capture the essence of who you are professionally and what drives your work.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn--primary">Get In Touch</a>
+                        <a href="#projects" class="btn btn--outline">View Projects</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Provide a more detailed description of your professional background, interests, and what motivates you in your field. This is where you can expand on your expertise and share your professional journey.
+                    </p>
+                    <p>
+                        Discuss your key strengths, areas of interest, and what makes you unique in your field. You can also mention your approach to work and your professional philosophy.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="5">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="50">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="15">0</div>
+                        <div class="stat-label">Publications</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section--alt">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-period">2020 - Present</div>
+                        <h3 class="timeline-title">Senior Position</h3>
+                        <h4 class="timeline-company">Company Name</h4>
+                        <p class="timeline-description">
+                            Key responsibilities and achievements in this role. Describe the impact you made and the technologies you worked with.
+                        </p>
+                        <div class="timeline-technologies">
+                            <span class="tech-tag">Technology 1</span>
+                            <span class="tech-tag">Technology 2</span>
+                            <span class="tech-tag">Technology 3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-period">2018 - 2020</div>
+                        <h3 class="timeline-title">Previous Position</h3>
+                        <h4 class="timeline-company">Previous Company</h4>
+                        <p class="timeline-description">
+                            Key responsibilities and achievements in this role. Highlight your growth and learning during this period.
+                        </p>
+                        <div class="timeline-technologies">
+                            <span class="tech-tag">Technology A</span>
+                            <span class="tech-tag">Technology B</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <div class="education-item card">
+                    <div class="card__body">
+                        <div class="education-year">2018</div>
+                        <h3 class="education-degree">Degree Name</h3>
+                        <h4 class="education-institution">University Name</h4>
+                        <p class="education-description">
+                            Relevant coursework, thesis topic, or achievements during your studies.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section--alt">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Skill 1</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Skill 2</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Skill 3</span>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="75"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Skill 4</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="research">Research</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-item card" data-category="web">
+                    <div class="project-image">
+                        <i class="fas fa-laptop-code project-placeholder"></i>
+                    </div>
+                    <div class="card__body">
+                        <h3 class="project-title">Project Title 1</h3>
+                        <p class="project-description">
+                            Brief description of the project and its impact. Explain the problem it solves and your role.
+                        </p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">Tech 1</span>
+                            <span class="tech-tag">Tech 2</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/project1" target="_blank" class="btn btn--sm btn--outline">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="btn btn--sm btn--primary">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item card" data-category="mobile">
+                    <div class="project-image">
+                        <i class="fas fa-mobile-alt project-placeholder"></i>
+                    </div>
+                    <div class="card__body">
+                        <h3 class="project-title">Project Title 2</h3>
+                        <p class="project-description">
+                            Brief description of the project and its impact. Highlight the technologies used and outcomes.
+                        </p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">Tech A</span>
+                            <span class="tech-tag">Tech B</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/project2" target="_blank" class="btn btn--sm btn--outline">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="btn btn--sm btn--primary">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section section--alt">
+        <div class="container">
+            <h2 class="section-title">Achievements & Honors</h2>
+            <div class="achievements-grid">
+                <div class="achievement-item card">
+                    <div class="card__body">
+                        <div class="achievement-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3 class="achievement-title">Achievement 1</h3>
+                        <h4 class="achievement-organization">Organization Name</h4>
+                        <div class="achievement-year">2023</div>
+                        <p class="achievement-description">
+                            Brief description of the achievement and its significance.
+                        </p>
+                    </div>
+                </div>
+                <div class="achievement-item card">
+                    <div class="card__body">
+                        <div class="achievement-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3 class="achievement-title">Certification</h3>
+                        <h4 class="achievement-organization">Certifying Body</h4>
+                        <div class="achievement-year">2022</div>
+                        <p class="achievement-description">
+                            Professional certification that demonstrates expertise.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>
+                        I'm always interested in discussing new opportunities, collaborations, or just having a conversation about our shared interests.
+                    </p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>your.email@example.com</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Your City, Country</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Your Name. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
